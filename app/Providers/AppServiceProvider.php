@@ -12,9 +12,9 @@ class AppServiceProvider extends ServiceProvider
         //
     }
 
-  
-   public function boot(): void
-{
-    URL::forceScheme('https');
-    URL::forceRootUrl('https://portfolio-production-76c0.up.railway.app');
+    public function boot(): void
+    {
+        URL::forceScheme('https');
+        URL::forceRootUrl('https://portfolio-production-76c0.up.railway.app');
+    }
 }
