@@ -1,4 +1,4 @@
-﻿FROM php:8.2-cli
+FROM php:8.2-cli
 
 RUN apt-get update && apt-get install -y \
     git curl zip unzip \
@@ -14,6 +14,4 @@ COPY . .
 RUN composer install --no-dev --optimize-autoloader --ignore-platform-reqs --no-scripts
 RUN chown -R www-data:www-data storage bootstrap/cache
 
-EXPOSE 8000
-
-CMD php -d error_reporting=E_ALL^E_DEPRECATED -d display_errors=Off artisan serve --host=0.0.0.0 --port=
+CMD ["sh", "-c", "php -d error_reporting=0 artisan serve --host=0.0.0.0 --port="]
