@@ -20,7 +20,7 @@ class PortfolioController extends Controller
             // About stats
             'stats' => [
                 ['value' => '3+',  'label' => 'Years Experience'],
-                ['value' => '10+', 'label' => 'Projects Done'],
+                ['value' => '5+', 'label' => 'Projects Done'],
                 ['value' => '5+', 'label' => 'Happy Clients'],
             ],
 
@@ -38,10 +38,10 @@ class PortfolioController extends Controller
                     'icon'   => '⚙️',
                     'title'  => 'Backend',
                     'skills' => [
-                        ['name' => 'Laravel',    'level' => 90],
-                        ['name' => 'PHP',        'level' => 85],
-                        ['name' => 'MySQL',      'level' => 80],
-                        ['name' => 'REST APIs',  'level' => 75],
+                        ['name' => 'Laravel',    'level' => 60],
+                        ['name' => 'PHP',        'level' => 65],
+                        ['name' => 'MySQL',      'level' => 50],
+                        ['name' => 'REST APIs',  'level' => 45],
                     ],
                 ],
                 [
@@ -49,9 +49,9 @@ class PortfolioController extends Controller
                     'title'  => 'Frontend',
                     'skills' => [
                        
-                        ['name' => 'JavaScript', 'level' => 78],
-                        ['name' => 'Tailwind CSS','level' => 85],
-                        ['name' => 'HTML / CSS', 'level' => 90],
+                        ['name' => 'JavaScript', 'level' => 38],
+                        ['name' => 'Tailwind CSS','level' => 35],
+                        ['name' => 'HTML / CSS', 'level' => 45],
                     ],
                 ],
                 [
