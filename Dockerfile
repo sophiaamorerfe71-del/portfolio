@@ -16,4 +16,4 @@ RUN chown -R www-data:www-data storage bootstrap/cache
 
 EXPOSE 8000
 
-CMD php artisan serve --host=0.0.0.0 --port=
+CMD php -d error_reporting=E_ALL^E_DEPRECATED -d display_errors=Off artisan serve --host=0.0.0.0 --port=

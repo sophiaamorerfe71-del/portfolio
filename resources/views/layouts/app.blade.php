@@ -67,9 +67,9 @@
         <div class="container">
             <p>&copy; {{ date('Y') }} Sophia Amor Erfe. Built with Laravel.</p>
             <div class="footer-socials">
-                <a href="https://github.com/johndlc" target="_blank" rel="noopener">GitHub</a>
-                <a href="https://linkedin.com/in/johndlc" target="_blank" rel="noopener">LinkedIn</a>
-                <a href="mailto:john@example.com">Email</a>
+                <a href="https://github.com/sophiaamorerfe71-del" target="_blank" rel="noopener">GitHub</a>
+                <a href="https://www.linkedin.com/in/sophiaamor-erfe-17881a406/" target="_blank" rel="noopener">LinkedIn</a>
+                <a href="mailto:sophiaamorerfe71@gmail.com">Email</a>
             </div>
         </div>
     </footer>
