@@ -14,4 +14,6 @@ COPY . .
 RUN composer install --no-dev --optimize-autoloader --ignore-platform-reqs --no-scripts
 RUN chown -R www-data:www-data storage bootstrap/cache
 
-CMD ["sh", "-c", "php -d error_reporting=0 artisan serve --host=0.0.0.0 --port="]
+EXPOSE 80
+
+CMD ["sh", "-c", "php artisan serve --host=0.0.0.0 --port=80"]
