@@ -1,4 +1,4 @@
-﻿FROM php:8.2-apache
+﻿FROM php:8.2-cli
 
 RUN apt-get update && apt-get install -y \
     git curl zip unzip \
@@ -14,10 +14,6 @@ COPY . .
 RUN composer install --no-dev --optimize-autoloader --ignore-platform-reqs --no-scripts
 RUN chown -R www-data:www-data storage bootstrap/cache
 
-RUN a2dismod mpm_event mpm_worker 2>/dev/null || true \
-    && a2enmod mpm_prefork rewrite
+EXPOSE 8000
 
-RUN sed -i 's|DocumentRoot /var/www/html|DocumentRoot /var/www/html/public|g' \
-    /etc/apache2/sites-available/000-default.conf
-
-EXPOSE 80
+CMD ["php", "artisan", "serve", "--host=0.0.0.0", "--port=8000"]
